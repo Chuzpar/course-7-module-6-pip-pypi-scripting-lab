@@ -2,8 +2,8 @@ from datetime import datetime
 import os
 
 def generate_log(data):
-    # TODO: Implement log generation logic
-
+    if not isinstance(data, list):
+        raise ValueError("log_data must be a list")
     # STEP 1: Validate input
     # Hint: Check if data is a list
 
